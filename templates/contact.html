@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Contact Us Page{% endblock title %}
+{% block body %}
+   <div class="container-fluid px-0">
+        <img src="/static/images/contact.jpg" class="w-100">
+   </div>
+   <div class="container mt__30 mb__30 my-5">
+   <div class="row fl_center">
+      <div class="contact-form col-12 col-md-6 mb__20">
+         <form method="post" id="contact_form">
+            <h3 class="mb__20">DROP US A LINE</h3>
+            <div class="form-group mb-3">
+               <label class="info-title" for="exampleInputName">Your Name : <span class="required">*</span></label>
+                  <input type="text" id="name" name="name"  placeholder="Your name" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+               <label class="info-title" for="exampleInputEmail1">Email Address : <span class="required">*</span></label>
+                  <input type="email" name="email" id="email"  placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+               <label class="info-title" for="exampleInputTitle">Mobile No : <span class="required">*</span></label>
+                  <input type="text" id="mobile" name="mobile" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57" maxlength="10" minlength="10"  placeholder="Mobile No" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+               <label class="info-title" for="exampleInputComments">Your Message :</label>
+                  <textarea id="message" name="message" rows="7"  placeholder="Message" class="form-control"></textarea>
+            </div>
+            <div class="form-group mb-3">
+            <button type="submit" class="btn btn-dark w-100">Send</button>
+            </div>
+         </form>
+      </div>
+      <div class="contact-content col-12 col-md-6">
+         <h3 class="mb__20">CONTACT INFORMATION</h3>
+         <p>We love to hear from you on our customer service, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>
+         <p>A-101, 1th floor, Shaheen Chambers, Borivali West<br> City : Mumbai - 400010 Maharashtra,India</p>
+         <p>+91-1234567890</p>
+         <p>demo@ecommerce.com</p>
+          <div class="col-md-12 contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995709657!3d19.08219783958221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1528528883858" width="600" height="200" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock body %}
